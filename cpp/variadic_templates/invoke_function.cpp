@@ -3,7 +3,7 @@
 // Returns the output of the function called.
  
 template <typename T, typename... Args>
-void invoke(T (*f)(Args...))
+T invoke(T (*f)(Args...))
 {
     return (*f)(Args...);
 }
